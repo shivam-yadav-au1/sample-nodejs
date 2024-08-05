@@ -25,6 +25,7 @@ pipeline {
     stage('Deploy App Stage') {
             steps {
              echo "Deploy Stage"
+             sh 'ls -la'
         }
 }
 
