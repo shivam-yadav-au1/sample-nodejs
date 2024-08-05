@@ -26,7 +26,9 @@ pipeline {
             steps {
              echo "Deploy Stage"
              sh 'ls -la'
-             sh ‘scp -r index.js ubuntu@13.127.18.11:/home/ubuntu/codedeploy’
+             sh ‘ssh ubuntu@13.127.18.11 mkdir -p /var/www/temp_deploy’
+
+
         }
 }
 
