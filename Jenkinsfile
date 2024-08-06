@@ -29,7 +29,7 @@ pipeline {
              sh 'ls -la'
 	     sh ' tar -zcvf code-archive.tar.gz .'
 	     sh 'ls -la'
-             sh 'ssh ubuntu@13.127.18.11 mkdir -p /var/www/temp_deploy'
+	     sh 'scp  archive-name.tar.gz jenkins@13.201.193.74:/home/jenkins'
 
 
 
