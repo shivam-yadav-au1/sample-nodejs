@@ -26,7 +26,7 @@ pipeline {
             steps {
              echo "Deploy Stage"
              sh 'ls -la'
-	     sh 'zip -r archive_name.zip *'
+	     sh ' tar -zcvf code-archive.tar.gz .'
 	     sh 'ls -la'
              sh 'ssh ubuntu@13.127.18.11 mkdir -p /var/www/temp_deploy'
 
